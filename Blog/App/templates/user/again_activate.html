@@ -1,0 +1,14 @@
+{% extends 'common/base.html' %}
+{% block title %}
+    激活
+{% endblock %}
+{% block pagecontent %}
+    <div class="page-header"><h2>账号激活</h2></div>
+    {% from 'bootstrap/wtf.html' import quick_form %}
+    <div class="row">
+        <div class="col-md-8">这个一个图片</div>
+        <div class="col-md-4">
+            {{ quick_form(form) }}
+        </div>
+    </div>
+{% endblock %}
